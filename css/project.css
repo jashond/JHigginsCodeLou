@@ -139,6 +139,8 @@ body, html {
   padding-bottom: 50px;
 }
 
+/* Confirmation page styles  */
+
 /* Media Query */
 @media (max-width: 800px) {
   .cardBackground {

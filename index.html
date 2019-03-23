@@ -12,29 +12,34 @@
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
 
 <!--navbar  -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3">
-<div class="container text-lg">
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light pt-3 pb-3">
+
+<div class="container">
   <a class="navbar-brand" href="#">Just Send It</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 </div>
-  <div class="collapse navbar-collapse" id="navbarNav">
+
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#home">Home</a>
+        <a class="navBg" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#info">Info</a>
+        <a class="navBg" href="#info">Info</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="navBg" href="#pricing">Pricing</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="navBg" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
+
+
+
 </nav> <!--/navbar  -->
 
 
@@ -52,7 +57,7 @@
 
 
 <!-- cards -->
-<div class="container-fluid mb-4 cardBackground">
+<div class="container-fluid cardBackground">
 <div>
 <h2 class="display-4 mb-4 text-center">Choose your Adventure</h2>
 </div>
@@ -107,7 +112,7 @@
 </div>
 <!-- /cards -->
 
-<div>
+<div class="slideshowTitle">
   <h2 class="display-4 text-center">This could be you</h2>
 </div>
 
@@ -144,22 +149,6 @@
 
 <!--footer  -->
 <div class="row py-3">
-  <div class="col-md-7">
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
   <div class="col-md text-md-right">
     <small>&copy; Send It Adventures &amp; higgyNation</small>
   </div>
@@ -297,7 +286,7 @@
     </div>
 </div><!-- /Sign Up Modal  -->
 
-<div class="modal" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="Confiramation Modal" aria-hidden="true">
+<div class="modal closeModal" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="Confiramation Modal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -356,15 +345,17 @@
               <div class="col-4" id="emailId"></div>
             </div>
         </div>
-        <div class="row mt-4 ml-2">
-          <button type="button" class="btn btn-primary" id="closeButton">Ok</button>
-        </div>
+        <!-- <div class="row mt-4 ml-2"> -->
+          <button type="button" class="btn btn-primary" id="refreshModel" data-dismiss="modal" aria-label="Close">Ok</button>
+        <!-- </div> -->
       </div>
     </div>
   </div>
-</div>/Cofirmation Modal
+</div>
+<!-- /Cofirmation Modal -->
 
 <!-- Linking Scripts -->
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/project.js"></script>

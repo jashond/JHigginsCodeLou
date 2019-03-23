@@ -7,6 +7,17 @@
   font-family: 'Rubik', sans-serif;
 }
 
+/* NavBar */
+.navBg{
+  padding: 10px;
+  color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
 
 /* HeroImage */
 body, html {
@@ -55,7 +66,7 @@ body, html {
 }
 
 .backgroudSlide{
-  background-color: rgba(238,238,238,0.2);
+  background-image: radial-gradient(rgb(199, 231, 234, .60), rgb(71, 78, 79, .60));
   padding-top: 20px;
 }
 
@@ -138,6 +149,13 @@ body, html {
   padding-top: 30px;
   padding-bottom: 50px;
 }
+
+.slideshowTitle{
+  margin-top: 100px;
+  margin-bottom: 35px
+}
+
+
 
 /* Confirmation page styles  */
 
